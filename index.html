@@ -1,81 +1,176 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="id">
 <head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<title>Page Title</title>
-	<link rel='stylesheet' href='main.css'>
-	<style>
-		body{
-			background-color: aliceblue;
-			padding: 0 20%;
-		}
-		#heading {
-			text-align: left;
-			background-color: aqua;
-			width: 100%;
-			height: 150px;
-			float: left;
-		}
-		#article {
-			background-color: greenyellow;
-		}
-		li {
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kampus Hub - Papan Pengumuman UNIWA</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        body {
+            background-color: aliceblue;
+            padding: 0 20%;
+            font-family: Arial, sans-serif;
+        }
+
+        #heading {
+            text-align: left;
+            background-color: aqua;
+            width: 100%;
+            height: 150px;
+            float: left;
+        }
+
+        #heading h2,
+        #heading p {
+            margin-left: 20px;
+        }
+
+        nav {
+            width: 100%;
+            float: left;
+            margin: 15px 0;
+        }
+
+        ul {
+            width: 100%;
+            height: 30px;
+            float: left;
+            padding: 0;
+        }
+
+        li {
             float: left;
             margin-right: 20px;
         }
-        ul {
+
+        main {
             width: 100%;
-            hight: 30px;
             float: left;
         }
+
         article {
             width: 100%;
-            hight: 30px;
             float: left;
             border: 1px solid black;
             margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: white;
         }
-	</style>
+
+        #article {
+            background-color: greenyellow;
+        }
+
+        footer {
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+            padding: 20px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white;
+        }
+
+        th {
+            background-color: aqua;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
 </head>
+
 <body>
 
-      <header>
-		<div id="heading">
-			<h2>HEADER</h2>
-			<P>Kampus Hub</P>
-            <P>Papan Pengumuman UNIWA</P>
-		</div>
+    <!-- HEADER -->
+    <header>
+        <div id="heading">
+            <h2>HEADER</h2>
+            <p>Kampus Hub</p>
+            <p>Papan Pengumuman UNIWA</p>
+        </div>
 
-		<nav>
+        <!-- NAVIGASI -->
+        <nav>
+            <ul>
+                <li>Beranda</li>
+                <li>Pengumuman</li>
+                <li>Data Mahasiswa</li>
+            </ul>
+        </nav>
+    </header>
 
-		</nav>
 
-      </header>
-	  <main>
-		<h1>Pengumuman Terbaru</h1>
-		<p> Cari judul: <input type="text" name="cari" id="cari" />
-          <input type="button" value="Cari" />
+    <!-- ISI UTAMA -->
+    <main>
+
+        <h1>Pengumuman Terbaru</h1>
+
+        <p>
+            Cari judul:
+            <input type="text" name="cari" id="cari">
+            <input type="button" value="Cari">
         </p>
-		<article id="article">
-			<h3>Judul Pengumuman 1</h3>
-			<p>saya sedang belajar memebuat web</p>
-		</article>
-		<article>
-			<h3>Judul Pengumuman 2</h3>
-			<p>dan saya belajar web dari 0</p>
-		</article>
-		<article>
-			<h3>Judul Pengumuman 3</h3>
-			<p>dan saya perlahan bisa</p>
-		</article>
 
-	  </main>
-	  <h2>Tentang Cerita Saya</h2>
-      
-	  
-<footer>
-Pemrograman Web - 2026 - {Moch Andika Riski Maulana / 20252210173}
-</footer>
+
+        <!-- PENGUMUMAN -->
+        <article id="article">
+            <h3>Judul Pengumuman 1</h3>
+            <p>Saya sedang belajar membuat web.</p>
+        </article>
+
+        <article>
+            <h3>Judul Pengumuman 2</h3>
+            <p>Dan saya belajar web dari 0.</p>
+        </article>
+
+        <article>
+            <h3>Judul Pengumuman 3</h3>
+            <p>Dan saya perlahan bisa.</p>
+        </article>
+
+
+        <!-- DATA MAHASISWA -->
+        <h2>Daftar Nilai Mahasiswa</h2>
+
+        <div id="data-container">
+        </div>
+
+    </main>
+
+
+    <!-- TENTANG -->
+    <h2>Tentang Cerita Saya</h2>
+
+    <p>
+        Saya sedang belajar membuat website dari dasar
+        menggunakan HTML, CSS, dan JavaScript.
+    </p>
+
+
+    <!-- FOOTER -->
+    <footer>
+        Pemrograman Web - 2026 -
+        {Moch Andika Riski Maulana / 20252210173}
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <!-- data.js harus dipanggil terlebih dahulu -->
+    <script src="data.js"></script>
+
+    
+    <script src="main.js"></script>
+
 </body>
 </html>
