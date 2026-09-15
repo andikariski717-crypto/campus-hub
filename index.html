@@ -6,93 +6,13 @@
 
     <title>Kampus Hub - Papan Pengumuman UNIWA</title>
 
-    <link rel="stylesheet" href="main.css">
-
-    <style>
-        body {
-            background-color: aliceblue;
-            padding: 0 20%;
-            font-family: Arial, sans-serif;
-        }
-
-        #heading {
-            text-align: left;
-            background-color: aqua;
-            width: 100%;
-            height: 150px;
-            float: left;
-        }
-
-        #heading h2,
-        #heading p {
-            margin-left: 20px;
-        }
-
-        nav {
-            width: 100%;
-            float: left;
-            margin: 15px 0;
-        }
-
-        ul {
-            width: 100%;
-            height: 30px;
-            float: left;
-            padding: 0;
-        }
-
-        li {
-            float: left;
-            margin-right: 20px;
-        }
-
-        main {
-            width: 100%;
-            float: left;
-        }
-
-        article {
-            width: 100%;
-            float: left;
-            border: 1px solid black;
-            margin-bottom: 10px;
-            padding: 10px;
-            box-sizing: border-box;
-            background-color: white;
-        }
-
-        #article {
-            background-color: greenyellow;
-        }
-
-        footer {
-            width: 100%;
-            float: left;
-            margin-top: 20px;
-            padding: 20px 0;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            background-color: white;
-        }
-
-        th {
-            background-color: aqua;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    
     <header>
         <div id="heading">
             <h2>HEADER</h2>
@@ -100,7 +20,7 @@
             <p>Papan Pengumuman UNIWA</p>
         </div>
 
-        <!-- NAVIGASI -->
+        
         <nav>
             <ul>
                 <li>Beranda</li>
@@ -116,12 +36,13 @@
 
         <h1>Pengumuman Terbaru</h1>
 
-        <p>
+        <div style="float: left; width: 100%; height: 200px;">
             Cari judul:
-            <input type="text" name="cari" id="cari">
-            <input type="button" value="Cari">
-        </p>
+           <input type="text" id="searchInput" placeholder="Cari nama mahasiswa">
 
+        <div id="searchResult">
+        </div>
+    </div>
 
         <!-- PENGUMUMAN -->
         <article id="article">
@@ -143,13 +64,12 @@
         <!-- DATA MAHASISWA -->
         <h2>Daftar Nilai Mahasiswa</h2>
 
-        <div id="data-container">
-        </div>
+        
 
     </main>
 
 
-    <!-- TENTANG -->
+
     <h2>Tentang Cerita Saya</h2>
 
     <p>
@@ -158,18 +78,15 @@
     </p>
 
 
-    <!-- FOOTER -->
+
     <footer>
         Pemrograman Web - 2026 -
         {Moch Andika Riski Maulana / 20252210173}
     </footer>
 
 
-    <!-- JAVASCRIPT -->
-    <!-- data.js harus dipanggil terlebih dahulu -->
+   
     <script src="data.js"></script>
-
-    <!-- kemudian main.js -->
     <script src="main.js"></script>
 
 </body>
