@@ -122,7 +122,6 @@ function App() {
             </article>
           ))}
         </section>
-
       </main>
 
       <section className="about-section">
