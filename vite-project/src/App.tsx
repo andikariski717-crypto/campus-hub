@@ -4,6 +4,12 @@ import './data'
 
 const students = (globalThis as any).students as { nama: string; nilai: number }[]
 
+const announcements = [
+  { title: 'Judul Pengumuman 1', description: 'Saya sedang belajar membuat web.' },
+  { title: 'Judul Pengumuman 2', description: 'Dan saya belajar web dari 0.' },
+  { title: 'Judul Pengumuman 3', description: 'Dan saya perlahan bisa.' },
+]
+
 type SearchResult = {
   id: string
   type: 'Mahasiswa' | 'Pengumuman'
@@ -106,7 +112,15 @@ function App() {
               <p>Nilai: {selectedStudent.nilai}</p>
             </div>
           )}
+        </section>
 
+        <section className="announcement-list" aria-label="Daftar pengumuman">
+          {announcements.map((announcement) => (
+            <article key={announcement.title} className="announcement-item">
+              <h3>{announcement.title}</h3>
+              <p>{announcement.description}</p>
+            </article>
+          ))}
         </section>
 
       </main>
